@@ -94,6 +94,28 @@ const tools: Tool[] = [
       required: ['decision', 'context'],
     },
   },
+  {
+    name: 'advanced_reasoning',
+    description: 'Consult GLM-4.6 for advanced mathematical, algorithmic, and scientific reasoning tasks. Delivers world-class innovative solutions with rigorous methodology, optimal algorithms, and enterprise-grade quality. Use for: complex algorithms, mathematical proofs, performance optimization, advanced data structures, computational problems, scientific analysis. Response optimized for Claude 4.5 Sonnet with XML structure.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        task: {
+          type: 'string',
+          description: 'The specific mathematical, algorithmic, or scientific task requiring advanced reasoning',
+        },
+        context: {
+          type: 'string',
+          description: 'Comprehensive context including: problem domain, constraints, requirements, current approach (if any), performance requirements, business logic',
+        },
+        expected_outcome: {
+          type: 'string',
+          description: 'Detailed description of expected outcome: solution characteristics, performance targets, quality metrics, innovation requirements',
+        },
+      },
+      required: ['task', 'context', 'expected_outcome'],
+    },
+  },
 ];
 
 const server = new Server(
@@ -163,6 +185,23 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case 'review_technical_decision': {
         const { decision, context } = args as { decision: string; context: string };
         const response = await glmClient.reviewTechnicalDecision(decision, context);
+        return {
+          content: [
+            {
+              type: 'text',
+              text: response,
+            },
+          ],
+        };
+      }
+
+      case 'advanced_reasoning': {
+        const { task, context, expected_outcome } = args as {
+          task: string;
+          context: string;
+          expected_outcome: string;
+        };
+        const response = await glmClient.advancedReasoning(task, context, expected_outcome);
         return {
           content: [
             {
