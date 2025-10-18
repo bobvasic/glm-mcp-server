@@ -1,6 +1,6 @@
 <div align="center">
 
-![GLM-4.6 Language Models](https://docs.z.ai/~gitbook/image?url=https%3A%2F%2F1714537354-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FoKEOdqrxP5lvsUGtMSOI%252Fuploads%252F0B9DP03iA4NTEsGjK0jx%252FGroup%25201000003879.png%3Falt%3Dmedia%26token%3D1cad1f71-1b90-494f-8e0a-36f9e2fa1c5c&width=768&dpr=1&quality=100&sign=44a30f5b&sv=2)
+![GLM-4.6 Language Models](assets/gml46hero.png)
 
 # <span style="color: #1e3a8a">GLM-4.6 MCP Server</span>
 
