@@ -1,0 +1,38 @@
+{
+  "name": "@cyberlinksec/glm-mcp-server",
+  "version": "1.0.0",
+  "description": "Enterprise MCP server bridging Claude 4.5 Sonnet with GLM-4.6 for advanced software architecture consulting",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "glm-mcp-server": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "glm-4.6",
+    "architecture",
+    "ai-assistant",
+    "model-context-protocol"
+  ],
+  "author": "CyberLink Security <info@cyberlinksec.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "glm-architecture": {
+      "command": "node",
+      "args": ["/absolute/path/to/glm-mcp-server/build/index.js"],
+      "env": {
+        "GLM_API_KEY": "your_glm_api_key_here"
+      }
+    }
+  }
+}
