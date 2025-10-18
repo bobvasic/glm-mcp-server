@@ -37,8 +37,9 @@ git status | grep ".env"
 # Expected: Nothing (file should be ignored)
 
 # 2. Check for API keys in tracked files
-grep -r "bab62d7" . --exclude-dir=node_modules --exclude-dir=.git --exclude=.env
+grep -r "YOUR_ACTUAL_KEY_PREFIX" . --exclude-dir=node_modules --exclude-dir=.git --exclude=.env
 # Expected: Only shows .env (which is gitignored)
+# Replace YOUR_ACTUAL_KEY_PREFIX with first 7 chars of your actual key
 
 # 3. Check for personal paths in tracked files
 grep -r "/home/bob" . --exclude-dir=node_modules --exclude-dir=.git --exclude=.env
