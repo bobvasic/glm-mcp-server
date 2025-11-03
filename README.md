@@ -8,6 +8,10 @@
 
 **Model Context Protocol bridge enabling Claude 4.5 Sonnet to leverage GLM-4.6's architectural intelligence for advanced system design, scalability patterns, and technical decision-making.**
 
+<a href="https://glama.ai/mcp/servers/@bobvasic/glm-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@bobvasic/glm-mcp-server/badge" alt="GLM-4.6 Server MCP server" />
+</a>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
