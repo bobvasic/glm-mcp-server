@@ -333,7 +333,7 @@ MIT License - Copyright (c) 2025 CyberLink Security
 
 <div align="center">
 
-### <span style="color: #10b981">Built with Enterprise Standards by CyberLink Security</span>
+### <span style="color: #10b981">Built with Enterprise Standards by CyberLink Security & Raptor Labs</span>
 
 **Empowering AI-Driven Architecture Decision Intelligence**
 
